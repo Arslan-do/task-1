@@ -1,0 +1,18 @@
+{
+  "name": "freelancer-portfolio",
+  "version": "1.0.0",
+  "description": "Kelvin Kramer - Freelancer Portfolio",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css --watch",
+    "sass:build": "sass scss/style.scss css/style.css --style compressed"
+  },
+  "keywords": [
+    "portfolio",
+    "freelancer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
