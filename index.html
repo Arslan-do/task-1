@@ -14,8 +14,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <div class="container">
+    <header class="header container">
         <div class="header__content">
           <div class="header__logo">
             <a href="#" class="logo" aria-label="Kelvin Kramer - Home">Kelvin<span class="logo__dot">.</span></a>
@@ -42,13 +41,11 @@
             </button>
           </nav>
         </div>
-      </div>
     </header>
 
     <!-- Banner / Hero Section -->
-    <section class="banner" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="banner__content">
+    <section class="banner container" aria-labelledby="hero-heading">
+          <div class="banner__content">
           <div class="banner__text">
             <h2 class="banner__title">Kelvin Kramer <br> Designer & Developer</h2>
             <p class="banner__description">
@@ -63,13 +60,11 @@
               class="banner__photo"
             />
           </div>
-        </div>
       </div>
     </section>
 
     
-    <section id="works" class="works-section" aria-labelledby="works-heading">
-      <div class="container">
+    <section id="works" class="works-section container" aria-labelledby="works-heading">
         <div class="works-section__grid">
           <article class="work-item">
             <div class="work-item__icon">
@@ -98,13 +93,23 @@
               Our design is translated into comprehensive digital environments built on latest development standards.
             </p>
           </article>
-        </div>
       </div>
     </section>
 
+    <!-- Portfolio -->
+    <h2 id="portfolio-heading" class="featured-work__heading1">Portfolio</h2>
+    <section class="featured-work container" aria-labelledby="online-store-heading">
+      <figure class="featured-work__figure">
+        <img 
+        src="image\Слой 8.png" 
+        alt="Online fasion store " 
+        class="featured-work__image"
+        />
+      </figure>
+      <h2 id="online-store-heading" class="featured-work__heading">Online fasion store - Homepage</h2>
+  </section>
     <!-- Featured Work Section -->
-    <section class="featured-work" aria-labelledby="featured-heading">
-      <div class="container">
+    <section class="featured-work container" aria-labelledby="reebok-heading">
         <figure class="featured-work__figure">
           <img 
           src="image/reebok_web.png" 
@@ -112,41 +117,52 @@
           class="featured-work__image"
           />
         </figure>
-        <h2 id="featured-heading" class="featured-work__title">Reebok Store - Concept</h2>
-      </div>
+        <h2 id="reebok-heading" class="featured-work__heading">Reebok Store - Concept</h2>
     </section>
 
+    <!-- Braun  -->
+    <section class="featured-work container" aria-labelledby="braun-heading">
+      <figure class="featured-work__figure">
+        <img 
+        src="image\reebok-5622.png" 
+        alt="Braun Landing Page" 
+        class="featured-work__image"
+        />
+      </figure>
+      <h2 id="braun-heading" class="featured-work__heading">Braun Landing Page - Concept</h2>
+  </section>
+
     <!-- Contacts Section -->
-    <section id="contacts" class="contacts-section" aria-labelledby="contacts-heading">
-      <div class="container">
+    <section id="contacts" class="contacts-section container" aria-labelledby="contacts-heading">
         <h2 id="contacts-heading" class="contacts-title">Contacts</h2>
-        
         <p class="contacts-intro">
           Want to know more or just chat?<br />
           You are welcome!
         </p>
-  
-        <button class="btn-send-message" type="button">Send message</button>
-  
+        <button id="btn-send-message" class="contacts-section__btn-send-message" type="button">Send message</button>
         <nav class="social-icons" aria-label="Social media links">
-          <a href="#" class="social-icon social-icon-square" aria-label="LinkedIn">
-            <img src="image/LinkedIn.svg" alt="" aria-hidden="true" />
+          <a href="#" class="social-icons__item social-icons__item--square" aria-label="LinkedIn">
+            <img src="image\Group.png" alt="" aria-hidden="true" />
           </a>
-          <a href="#" class="social-icon social-icon-circle" aria-label="Instagram">
-            <img src="image/Vector.svg" alt="" aria-hidden="true" />
+          <a href="#" class="social-icons__item social-icons__item--circle" aria-label="Instagram">
+            <img src="image\Vector.png" alt="" aria-hidden="true" />
           </a>
-          <a href="#" class="social-icon social-icon-square" aria-label="Behance">
-            <img src="image/Vector (1).svg" alt="" aria-hidden="true" />
+          <a href="#" class="social-icons__item social-icons__item--square" aria-label="Behance">
+            <img src="image\behance.png" alt="" aria-hidden="true" />
           </a>
-          <a href="#" class="social-icon social-icon-circle" aria-label="Dribbble">
-            <img src="image/Vector (2).svg" alt="" aria-hidden="true" />
+          <a href="#" class="social-icons__item social-icons__item--circle" aria-label="Dribbble">
+            <img src="image\Vector (2).png" alt="" aria-hidden="true" />
           </a>
         </nav>
   
         <div class="social-text">
           <p>Like me on</p>
           <p>LinkedIn, Instagram, Behance, Dribbble</p>
-        </div>
+      </div>
+      
+      <!-- Message notification -->
+      <div id="message-notification" class="contacts-section__message" style="display: none;">
+        Сообщение отправлено! (Это демонстрационная версия)
       </div>
     </section>
     <script src="js/script.js"></script>

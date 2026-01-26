@@ -82,16 +82,14 @@ class ContactSection {
   }
 
   bindEvents() {
-    const button = document.querySelector('.btn-send-message');
-    if (button) {
+    const button = document.getElementById('btn-send-message');
+    const messageNotification = document.getElementById('message-notification');
+    
+    if (button && messageNotification) {
       button.addEventListener('click', () => {
-      
-        const message = document.createElement('div');
-        message.textContent = 'Message sent! (This is a demo)';
-        message.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #000; color: #fff; padding: 15px 20px; border-radius: 5px; z-index: 10000;';
-        document.body.appendChild(message);
+        messageNotification.style.display = 'block';
         setTimeout(() => {
-          message.remove();
+          messageNotification.style.display = 'none';
         }, 3000);
       });
     }
