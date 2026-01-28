@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,41 +15,39 @@
   <body>
     <!-- Header -->
     <header class="header container">
-      <div class="header__content">
-        <div class="header__logo">
-          <a href="#" class="logo">Kelvin<span class="logo__dot">.</span></a>
+        <div class="header__content">
+          <div class="header__logo">
+            <a href="#" class="logo" aria-label="Kelvin Kramer - Home">Kelvin<span class="logo__dot">.</span></a>
+          </div>
+          <nav class="header__nav" aria-label="Main navigation">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active" aria-current="page">Home</a>
+              </li>
+              <li class="nav__item"><a href="#works" class="nav__link">Works</a></li>
+              <li class="nav__item">
+                <a href="#services" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contact</a>
+              </li>
+            </ul>
+            <button class="nav__close" aria-label="Close menu" type="button">×</button>
+            <button class="nav__burger" aria-label="Open menu" type="button" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
+          </nav>
         </div>
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link nav__link--active">Home</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">Works</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
-            </li>
-          </ul>
-          <button class="nav__close" aria-label="Close menu">×</button>
-          <button class="nav__burger" aria-label="Open menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      </div>
     </header>
 
     <!-- Banner / Hero Section -->
-    <section class="banner">
-      <div class="container">
-        <div class="banner__content">
+    <section class="banner container" aria-labelledby="hero-heading">
+          <div class="banner__content">
           <div class="banner__text">
-            <h1 class="banner__name">Kelvin Kramer</h1>
-            <h2 class="banner__title">Designer & Developer</h2>
+            <h2 class="banner__title">Kelvin Kramer <br> Designer & Developer</h2>
             <p class="banner__description">
               I'm a portrait, fashion and lifestyle photographer living In New
               York City. During my thirteen year tenure here.
@@ -57,15 +55,116 @@
           </div>
           <div class="banner__image">
             <img
-              src="image/9c695f58edcf3df6b77b66cfa28b0a768d0c98b4.png"
-              alt="Kelvin Kramer"
+              src="image\hero.svg"
+              alt="Kelvin Kramer - Designer and Developer"
               class="banner__photo"
             />
           </div>
-        </div>
       </div>
     </section>
 
+    
+    <section id="works" class="works-section container" aria-labelledby="works-heading">
+        <div class="works-section__grid">
+          <article class="work-item">
+            <div class="work-item__icon">
+              <img src="image\graphic 1.svg" alt="">
+            </div>
+            <h3 class="work-item__title">UI/UX DESIGN</h3>
+            <p class="work-item__description">
+              Our design is translated into comprehensive digital environments built on latest development standards.
+            </p>
+          </article>
+          <article class="work-item">
+            <div class="work-item__icon">
+              <img src="image\startup 1.svg" alt="">
+            </div>
+            <h3 class="work-item__title">DEVELOPMENT</h3>
+            <p class="work-item__description">
+              Our design is translated into comprehensive digital environments built on latest development standards.
+            </p>
+          </article>
+          <article class="work-item">
+            <div class="work-item__icon">
+              <img src="image\browser 1.svg" alt="">
+            </div>
+            <h3 class="work-item__title">SOFTWARE TESTING</h3>
+            <p class="work-item__description">
+              Our design is translated into comprehensive digital environments built on latest development standards.
+            </p>
+          </article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <h2 id="portfolio-heading" class="featured-work__heading1">Portfolio</h2>
+    <section class="featured-work container" aria-labelledby="online-store-heading">
+      <figure class="featured-work__figure">
+        <img 
+        src="image\Слой 8.svg" 
+        alt="Online fasion store " 
+        class="featured-work__image"
+        />
+      </figure>
+      <h2 id="online-store-heading" class="featured-work__heading">Online fasion store - Homepage</h2>
+  </section>
+    <!-- Featured Work Section -->
+    <section class="featured-work container" aria-labelledby="reebok-heading">
+        <figure class="featured-work__figure">
+          <img 
+          src="image\reebok_web.svg" 
+          alt="Reebok web design project" 
+          class="featured-work__image"
+          />
+        </figure>
+        <h2 id="reebok-heading" class="featured-work__heading">Reebok Store - Concept</h2>
+    </section>
+
+    <!-- Braun  -->
+    <section class="featured-work container" aria-labelledby="braun-heading">
+      <figure class="featured-work__figure">
+        <img 
+        src="image\reebok_web (1).svg" 
+        alt="Braun Landing Page" 
+        class="featured-work__image"
+        />
+      </figure>
+      <h2 id="braun-heading" class="featured-work__heading">Braun Landing Page - Concept</h2>
+  </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts-section container" aria-labelledby="contacts-heading">
+        <h2 id="contacts-heading" class="contacts-title">Contacts</h2>
+        <p class="contacts-intro">
+          Want to know more or just chat?<br />
+          You are welcome!
+        </p>
+        <button id="btn-send-message" class="contacts-section__btn-send-message" type="button">Send message</button>
+        <nav class="social-icons" aria-label="Social media links">
+          <a href="#" class="social-icons__item social-icons__item--square" aria-label="LinkedIn">
+            <img src="image\LinkedIn.svg" alt="" aria-hidden="true" />
+          </a>
+          <a href="#" class="social-icons__item social-icons__item--circle" aria-label="Instagram">
+            <img src="image\Instargam.svg" alt="" aria-hidden="true" />
+          </a>
+          <a href="#" class="social-icons__item social-icons__item--square" aria-label="Behance">
+            <img src="image\behance.svg" alt="" aria-hidden="true" />
+          </a>
+          <a href="#" class="social-icons__item social-icons__item--circle" aria-label="Dribbble">
+            <img src="image\surface1 7.svg" alt="" aria-hidden="true" />
+          </a>
+        </nav>
+  
+        <div class="social-text">
+          <p>Like me on</p>
+          <p>LinkedIn, Instagram, Behance, Dribbble</p>
+      </div>
+      
+      <!-- Message notification -->
+      <div id="message-notification" class="contacts-section__message" style="display: none;">
+        Сообщение отправлено! (Это демонстрационная версия)
+      </div>
+    </section>
     <script src="js/script.js"></script>
   </body>
 </html>
