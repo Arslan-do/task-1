@@ -57,6 +57,7 @@ img {
   align-items: center;
 }
 .header__logo .logo {
+  margin: 18px;
   font-size: 28px;
   font-weight: 700;
   color: #000000;
@@ -80,6 +81,8 @@ img {
 @media (max-width: 768px) {
   .header__nav .nav__list {
     display: none;
+    font-size: 34px;
+    font-weight: 700px;
     position: fixed;
     top: 0;
     left: 0;
@@ -88,7 +91,8 @@ img {
     height: 100vh;
     background-color: #f1f1f1;
     flex-direction: column;
-    padding: 80px 30px 30px;
+    align-items: baseline;
+    padding: 40px 10px 10px;
     gap: 30px;
     z-index: 1000;
   }
@@ -97,19 +101,34 @@ img {
   }
 }
 .header__nav .nav__item .nav__link {
-  color: #000000;
+  color: #828282;
   text-decoration: none;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   transition: opacity 0.3s;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 768px) {
+  .header__nav .nav__item .nav__link {
+    color: #828282;
+    font-weight: 600;
+    font-size: 34px;
+  }
 }
 .header__nav .nav__item .nav__link:hover {
   opacity: 0.7;
 }
 .header__nav .nav__item .nav__link--active {
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
+}
+
+@media (max-width: 768px) {
+  .header__nav .nav__item .nav__link--active {
+    color: #000000;
+    font-weight: 600;
+    font-size: 34px;
+  }
 }
 .header__nav .nav__close {
   display: none;
@@ -144,6 +163,7 @@ img {
 }
 @media (max-width: 768px) {
   .header__nav .nav__burger {
+    margin: 10px;
     display: flex;
   }
 }
@@ -205,8 +225,8 @@ img {
   }
 }
 .banner__title {
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 44px;
+  font-weight: 600;
   color: #000000;
   line-height: 1.3;
   font-family: "Poppins", sans-serif;
@@ -219,11 +239,13 @@ img {
 }
 @media (max-width: 480px) {
   .banner__title {
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 600px;
   }
 }
 .banner__description {
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   color: #000000;
   line-height: 1.6;
   max-width: 520px;
@@ -243,7 +265,9 @@ img {
 }
 @media (max-width: 968px) {
   .banner__text {
+    margin: 18px;
     order: 1;
+    gap: 0px;
   }
 }
 .banner__photo {
@@ -256,8 +280,14 @@ img {
 }
 
 .works-section {
+  position: relative;
+  margin: 0px;
+  padding: 80px 0px;
+  max-width: 100%;
+  min-height: 200%;
+  max-height: 200%;
+  overflow: hidden;
   background-color: #ffffff;
-  padding: 80px 0;
 }
 @media (max-width: 768px) {
   .works-section {
@@ -301,8 +331,15 @@ img {
 .work-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
 }
+
+@media (max-width: 768px) {
+  .work-item {
+    margin: 30px;
+  }
+}
+
 .work-item__icon {
   margin-bottom: 25px;
   display: flex;
@@ -335,12 +372,12 @@ img {
 }
 
 .featured-work {
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   padding: 80px 0;
 }
 @media (max-width: 768px) {
   .featured-work {
-    padding: 60px 0;
+    padding: 10px 0;
   }
 }
 .featured-work__heading1 {
@@ -352,7 +389,15 @@ img {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
+
+@media (max-width: 768px) {
+  .featured-work__heading1 {
+    padding: 60px 0px 0px 0px;
+  }
+}
+
 .featured-work__heading {
+  padding: 40px;
   font-size: 18px;
   font-weight: 400;
   color: #000000;
@@ -363,8 +408,10 @@ img {
 }
 @media (max-width: 768px) {
   .featured-work__heading {
-    font-size: 28px;
+    padding: 40px 0 0 0;
+    font-size: 18px;
     margin-bottom: 40px;
+    text-decoration: underline;
   }
 }
 .featured-work__figure {
@@ -387,8 +434,14 @@ img {
 }
 
 .contacts-section {
+  position: relative;
+  margin: 0px;
+  padding: 80px 0px;
+  max-width: 100%;
+  min-height: 200%;
+  max-height: 200%;
+  overflow: hidden;
   background-color: #ffffff;
-  padding: 80px 0;
   text-align: center;
 }
 @media (max-width: 768px) {
@@ -403,14 +456,14 @@ img {
 }
 .contacts-section .contacts-title {
   font-size: 34px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000000;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 480px) {
   .contacts-section .contacts-title {
-    font-size: 28px;
+    font-size: 34px;
   }
 }
 .contacts-section .contacts-intro {
@@ -429,10 +482,12 @@ img {
   background-color: #000000;
   color: #ffffff;
   border: none;
-  padding: 12px 24px;
+  height: 42px;
+  width: 8%;
+  padding: 1px 24px;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Poppins", sans-serif;
@@ -447,6 +502,8 @@ img {
 }
 @media (max-width: 480px) {
   .contacts-section__btn-send-message {
+    height: 42px;
+    width: 50%;
     padding: 10px 20px;
     font-size: 16px;
   }
@@ -471,7 +528,7 @@ img {
 }
 @media (max-width: 480px) {
   .contacts-section .social-icons {
-    gap: 15px;
+    gap: 1px;
   }
 }
 .contacts-section .social-icons__item {
@@ -523,7 +580,7 @@ img {
   margin-bottom: 5px;
 }
 .contacts-section .social-text p:last-child {
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 480px) {
   .contacts-section .social-text {
